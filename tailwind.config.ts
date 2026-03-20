@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        status: {
+          best: "hsl(var(--status-best))",
+          "best-bg": "hsl(var(--status-best-bg))",
+          good: "hsl(var(--status-good))",
+          "good-bg": "hsl(var(--status-good-bg))",
+          limited: "hsl(var(--status-limited))",
+          "limited-bg": "hsl(var(--status-limited-bg))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
