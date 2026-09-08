@@ -30,10 +30,10 @@ jobs:
         with:
           node-version: lts/*
 
-      # Use npm install because the repository lockfile is currently out of sync
-      # with package.json. npm ci intentionally fails in this situation.
+      # The committed package-lock.json is currently out of sync with package.json,
+      # so npm ci would fail. npm install resolves the declared package.json versions.
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-audit --no-fund
 
       - name: Build
         run: npm run build
